@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>画面サイズに応じたレイアウト</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>要素の表示/非表示</h1>
+
+    <div class="row">
+      <div class="col-xs-12" style="background:#CCC;height:50px;">
+        ブロックA
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8" style="background:#999;height:150px;">
+        ブロックB
+      </div>
+      <div class="hidden-xs col-sm-4" style="background:#000;height:150px;color:#FFF;">
+        広告
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6" style="background:#CCC;height:200px;">
+        ブロックC
+      </div>
+      <div class="col-xs-12 visible-xs" style="background:#000;height:50px;color:#FFF;">
+        バナー
+      </div>
+      <div class="col-xs-12 col-sm-6" style="background:#999;height:200px;">
+        ブロックD
+      </div>
+    </div>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
